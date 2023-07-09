@@ -17,8 +17,8 @@
     pip install -r requirements.txt
     ```
 3. VOICEPEAKの場合は次のようにして連番のflacファイルとセリフのファイルを生成します。
-![VOICEPEAKのメイン画面](image/main.png)
-![VOICEPEAKの出力画面](image/export.png)
+![VOICEPEAKのメイン画面](images/main.png)
+![VOICEPEAKの出力画面](images/export.png)
 4. スクリプトを実行します：
     ```bash
     python create_srt.py <your_directory>
