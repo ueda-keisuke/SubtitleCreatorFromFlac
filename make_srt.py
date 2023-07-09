@@ -1,7 +1,7 @@
 import os
 import soundfile as sf
 import sounddevice as sd
-import re
+import sys
 
 def create_srt(directory):
     files = sorted(os.listdir(directory))
@@ -26,4 +26,8 @@ def create_srt(directory):
     with open(os.path.join(directory, 'output.srt'), 'w') as srt_file:
         srt_file.write(srt_file_content)
 
-create_srt('flac')
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python create_srt.py <your_directory>")
+        sys.exit(1)
+    create_srt(sys.argv[1])
