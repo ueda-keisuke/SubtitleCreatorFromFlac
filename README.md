@@ -1,0 +1,2 @@
+# SubtitleCreatorFromFlac
+VOICEPEAKなどの音声生成ソフトで生成したオーディオファイルとテキストファイルからSRT字幕ファイルを生成する
